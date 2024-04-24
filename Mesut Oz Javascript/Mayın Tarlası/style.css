@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;/* Yazı tipini belirler */
+    font-weight: bold;  /* Yazı kalınlığını belirler */
+    text-align: center;  /* Metni ortalar */
+}
+
+#board {
+    width: 400px; /* Oyun tahtasının genişliğini belirler */
+    height: 400px;/* Oyun tahtasının yüksekliğini belirler */
+    border: 10px solid darkgray;/* Kenarlık kalınlığını ve rengini belirler */
+    background-color: lightgray;/* Arka plan rengini belirler */
+
+    margin: 0 auto;/* Yatayda merkezler */
+    display: flex;/* Flex kutusu olarak düzenler */
+    flex-wrap: wrap;/* Satırlar arasında taşma olursa yeni satıra geçer */
+}
+
+#board div {
+    width: 48px;/* Karelerin genişliğini belirler */
+    height: 48px;/* Karelerin yüksekliğini belirler */
+    border: 1px solid whitesmoke; /* Kare kenarlığını belirler */
+
+    
+    font-size: 30px;/* Yazı boyutunu belirler */
+    display: flex;/* Flex kutusu olarak düzenler */
+    justify-content: center; /* İçeriği yatayda ortalar */
+    align-items: center;/* İçeriği dikeyde ortalar */
+}
+
+.tile-clicked {
+    background-color: darkgrey;
+}
+
+.x1 {
+    color: blue;
+}
+
+.x2 {
+    color: green;
+}
+
+.x3 {
+    color: red;
+}
+
+.x4 {
+    color: navy;
+}
+
+.x5 {
+    color: brown;
+}
+
+.x6 {
+    color: teal;
+}
+
+.x7 {
+    color: black;
+}
+
+.x8 {
+    color: gray;
+}
+
+#flag-button {
+    width: 100px;/* Bayrak düğmesinin genişliğini belirler */  
+    height: 50px;/* Bayrak düğmesinin yüksekliğini belirler */
+    font-size: 30px; /* Bayrak düğmesindeki yazı boyutunu belirler */
+    background-color: lightgray;/* Bayrak düğmesinin arka plan rengini belirler */
+    border: none;/* Kenarlık olmaz */
+}
